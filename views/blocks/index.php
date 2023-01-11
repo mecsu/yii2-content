@@ -9,7 +9,7 @@ use wdmg\widgets\SelectInput;
 use yii\bootstrap\Modal;
 
 /* @var $this yii\web\View */
-/* @var $searchModel wdmg\content\models\BlocksSearch */
+/* @var $searchModel mecsu\content\models\BlocksSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('app/modules/content', 'Content blocks');

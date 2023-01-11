@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\content\models;
+namespace mecsu\content\models;
 
 use Yii;
 use yii\db\ActiveRecord;

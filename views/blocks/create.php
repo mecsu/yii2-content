@@ -3,8 +3,8 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $module wdmg\content\Module */
-/* @var $model wdmg\content\models\Blocks */
+/* @var $module mecsu\content\Module */
+/* @var $model mecsu\content\models\Blocks */
 
 if ($source) {
     $this->title = Yii::t('app/modules/content', 'Version of block: {title}', [

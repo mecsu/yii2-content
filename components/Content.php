@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\content\components;
+namespace mecsu\content\components;
 
 
 /**
@@ -9,7 +9,7 @@ namespace wdmg\content\components;
  * @category        Content
  * @version         1.1.2
  * @author          Alexsander Vyshnyvetskyy <alex.vyshnyvetskyy@gmail.com>
- * @link            https://github.com/wdmg/yii2-content
+ * @link            https://github.com/mecsu/yii2-content
  * @copyright       Copyright (c) 2019 - 2021 W.D.M.Group, Ukraine
  * @license         https://opensource.org/licenses/MIT Massachusetts Institute of Technology (MIT) License
  *
@@ -18,7 +18,7 @@ namespace wdmg\content\components;
 use Yii;
 use yii\base\Component;
 use yii\helpers\ArrayHelper;
-use wdmg\content\models\Blocks;
+use mecsu\content\models\Blocks;
 
 class Content extends Component
 {

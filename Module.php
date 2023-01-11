@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\content;
+namespace mecsu\content;
 
 /**
  * Yii2 Content manager
@@ -8,7 +8,7 @@ namespace wdmg\content;
  * @category        Module
  * @version         1.1.2
  * @author          Alexsander Vyshnyvetskyy <alex.vyshnyvetskyy@gmail.com>
- * @link            https://github.com/wdmg/yii2-content
+ * @link            https://github.com/mecsu/yii2-content
  * @copyright       Copyright (c) 2019 - 2021 W.D.M.Group, Ukraine
  * @license         https://opensource.org/licenses/MIT Massachusetts Institute of Technology (MIT) License
  *
@@ -25,7 +25,7 @@ class Module extends BaseModule
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'wdmg\content\controllers';
+    public $controllerNamespace = 'mecsu\content\controllers';
 
     /**
      * {@inheritdoc}
@@ -109,7 +109,7 @@ class Module extends BaseModule
         // Configure content component
         $app->setComponents([
             'content' => [
-                'class' => 'wdmg\content\components\Content'
+                'class' => 'mecsu\content\components\Content'
             ]
         ]);
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\content\controllers;
+namespace mecsu\content\controllers;
 
 use Yii;
 use yii\web\Controller;
@@ -9,8 +9,8 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\helpers\ArrayHelper;
 use yii\data\ArrayDataProvider;
-use wdmg\content\models\Blocks;
-use wdmg\content\models\BlocksSearch;
+use mecsu\content\models\Blocks;
+use mecsu\content\models\BlocksSearch;
 
 /**
  * ListsController implements the CRUD actions.

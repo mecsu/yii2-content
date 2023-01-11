@@ -1,14 +1,14 @@
 <?php
 
-namespace wdmg\content\models;
+namespace mecsu\content\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use wdmg\content\models\Blocks;
+use mecsu\content\models\Blocks;
 
 /**
- * BlocksSearch represents the model behind the search form of `wdmg\content\models\Blocks`.
+ * BlocksSearch represents the model behind the search form of `mecsu\content\models\Blocks`.
  */
 class BlocksSearch extends Blocks
 {

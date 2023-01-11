@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\content\controllers;
+namespace mecsu\content\controllers;
 
 use Yii;
 use yii\web\Controller;
@@ -9,9 +9,9 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\helpers\ArrayHelper;
 use yii\data\ActiveDataProvider;
-use wdmg\content\models\Fields;
-use wdmg\content\models\Blocks;
-use wdmg\content\models\FieldsSearch;
+use mecsu\content\models\Fields;
+use mecsu\content\models\Blocks;
+use mecsu\content\models\FieldsSearch;
 
 /**
  * FieldsController implements the CRUD actions.

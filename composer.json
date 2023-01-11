@@ -1,23 +1,20 @@
 {
-  "name": "wdmg/yii2-content",
+  "name": "mecsu/yii2-content",
   "description": "Content manager",
-  "keywords": ["yii2", "yii2-content", "content", "manager", "wdmg"],
+  "keywords": ["yii2", "yii2-content", "content", "manager"],
   "type": "yii2-extension",
   "license": "MIT",
   "version": "1.1.2",
-  "homepage": "https://github.com/wdmg/yii2-content",
-  "support": {
-    "source": "https://github.com/wdmg/yii2-content",
-    "issues": "https://github.com/wdmg/yii2-content/issues"
-  },
   "authors": [
     {
-      "name": "Alexsander Vyshnyvetskyy",
-      "email": "alex.vyshnyvetskyy@gmail.com"
-    },
+      "name": "Xuan Nguyen",
+      "email": "xuanhn.vt@gmail.com"
+    }
+  ],
+  "repositories":[
     {
-      "name": "W.D.M.Group, Ukraine",
-      "email": "wdmg.com.ua@gmail.com"
+        "type": "git",
+        "url": "https://github.com/mecsu/yii2-blog"
     }
   ],
   "require": {
@@ -29,7 +26,7 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "wdmg\\content\\": ""
+      "mecsu\\content\\": ""
     }
   },
   "extra": {

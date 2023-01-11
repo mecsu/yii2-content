@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\content\models;
+namespace mecsu\content\models;
 
 use Yii;
 use yii\db\ActiveQuery;
@@ -12,9 +12,9 @@ use yii\helpers\Json;
 use yii\behaviors\TimestampBehavior;
 use yii\behaviors\BlameableBehavior;
 use yii\behaviors\SluggableBehavior;
-use wdmg\content\models\Fields;
-use wdmg\content\models\Items;
-use wdmg\content\models\Content;
+use mecsu\content\models\Fields;
+use mecsu\content\models\Items;
+use mecsu\content\models\Content;
 
 /**
  * This is the model class for table "{{%content_blocks}}".

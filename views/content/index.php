@@ -10,7 +10,7 @@ use wdmg\widgets\SelectInput;
 use yii\bootstrap\Modal;
 
 /* @var $this yii\web\View */
-/* @var $searchModel wdmg\content\models\BlocksSearch */
+/* @var $searchModel mecsu\content\models\BlocksSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 if ($block::CONTENT_BLOCK_TYPE_LIST == $block->type)

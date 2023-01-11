@@ -5,7 +5,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model wdmg\content\models\Blocks */
+/* @var $model mecsu\content\models\Blocks */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 <div class="content-content-form">

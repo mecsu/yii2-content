@@ -6,7 +6,7 @@ use yii\widgets\ActiveForm;
 use wdmg\widgets\SelectInput;
 
 /* @var $this yii\web\View */
-/* @var $model wdmg\content\models\Blocks */
+/* @var $model mecsu\content\models\Blocks */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 <div class="content-lists-form">

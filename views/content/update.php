@@ -3,8 +3,8 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $module wdmg\content\Module */
-/* @var $model wdmg\content\models\Blocks */
+/* @var $module mecsu\content\Module */
+/* @var $model mecsu\content\models\Blocks */
 
 if ($block::CONTENT_BLOCK_TYPE_LIST == $block->type)
     $this->title = Yii::t('app/modules/content', 'Edit row: {title}', [

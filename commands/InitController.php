@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\content\commands;
+namespace mecsu\content\commands;
 
 use Yii;
 use yii\console\Controller;
@@ -49,15 +49,15 @@ class InitController extends Controller
             $selected = trim(fgets(STDIN));
 
         if ($selected == "1") {
-            Yii::$app->runAction('migrate/up', ['migrationPath' => '@vendor/wdmg/yii2-content/migrations', 'interactive' => true]);
+            Yii::$app->runAction('migrate/up', ['migrationPath' => '@vendor/mecsu/yii2-content/migrations', 'interactive' => true]);
         } else if ($selected == "2") {
-            Yii::$app->runAction('migrate/down', ['migrationPath' => '@vendor/wdmg/yii2-content/migrations', 'interactive' => true]);
+            Yii::$app->runAction('migrate/down', ['migrationPath' => '@vendor/mecsu/yii2-content/migrations', 'interactive' => true]);
         } else if($selected == "3") {
 
             echo $this->ansiFormat("\n");
 
             $datetime = date("Y-m-d H:i:sP");
-            $blocksTable = \wdmg\content\models\Blocks::tableName();
+            $blocksTable = \mecsu\content\models\Blocks::tableName();
             Yii::$app->db->createCommand()->batchInsert($blocksTable, [
                 'id', 'source_id', 'title', 'description', 'alias', 'fields', 'type', 'status', 'locale', 'created_at', 'created_by', 'updated_at', 'updated_by'
             ], [
@@ -70,7 +70,7 @@ class InitController extends Controller
             ])->execute();
 
             $datetime = date("Y-m-d H:i:sP");
-            $fieldsTable = \wdmg\content\models\Fields::tableName();
+            $fieldsTable = \mecsu\content\models\Fields::tableName();
             Yii::$app->db->createCommand()->batchInsert($fieldsTable, [
                 'id', 'source_id', 'block_id', 'label', 'name', 'type', 'sort_order', 'params', 'locale', 'created_at', 'created_by', 'updated_at', 'updated_by'
             ], [
@@ -98,7 +98,7 @@ class InitController extends Controller
             ])->execute();
 
             $datetime = date("Y-m-d H:i:sP");
-            $contentTable = \wdmg\content\models\Content::tableName();
+            $contentTable = \mecsu\content\models\Content::tableName();
             Yii::$app->db->createCommand()->batchInsert($contentTable, [
                 'id', 'field_id', 'block_id', 'content', 'locale', 'created_at', 'created_by', 'updated_at', 'updated_by'
             ], [
@@ -125,7 +125,7 @@ class InitController extends Controller
                 [24, 21, 4, 'Програміст', 'uk-UA', $datetime, null, $datetime, null]
             ])->execute();
 
-            $itemsTable = \wdmg\content\models\Items::tableName();
+            $itemsTable = \mecsu\content\models\Items::tableName();
             Yii::$app->db->createCommand()->batchInsert($itemsTable, [
                 'id', 'block_id', 'ext_id', 'row_order'
             ], [

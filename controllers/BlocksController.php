@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\content\controllers;
+namespace mecsu\content\controllers;
 
 use Yii;
 use yii\web\Controller;
@@ -8,8 +8,8 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\helpers\ArrayHelper;
-use wdmg\content\models\Blocks;
-use wdmg\content\models\BlocksSearch;
+use mecsu\content\models\Blocks;
+use mecsu\content\models\BlocksSearch;
 
 /**
  * BlocksController implements the CRUD actions.

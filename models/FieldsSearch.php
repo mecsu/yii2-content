@@ -1,13 +1,13 @@
 <?php
 
-namespace wdmg\content\models;
+namespace mecsu\content\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use wdmg\content\models\Fields;
+use mecsu\content\models\Fields;
 
 /**
- * FieldsSearch represents the model behind the search form of `app\vendor\wdmg\content\models\Fields`.
+ * FieldsSearch represents the model behind the search form of `app\vendor\mecsu\content\models\Fields`.
  */
 class FieldsSearch extends Fields
 {

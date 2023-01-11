@@ -1,6 +1,6 @@
 <?php
 
-namespace wdmg\content\controllers;
+namespace mecsu\content\controllers;
 
 use Yii;
 use yii\web\Controller;
@@ -10,10 +10,10 @@ use yii\filters\AccessControl;
 use yii\helpers\ArrayHelper;
 use yii\data\ArrayDataProvider;
 use yii\data\ActiveDataProvider;
-use wdmg\content\models\Blocks;
-use wdmg\content\models\Fields;
-use wdmg\content\models\Content;
-use wdmg\content\models\Items;
+use mecsu\content\models\Blocks;
+use mecsu\content\models\Fields;
+use mecsu\content\models\Content;
+use mecsu\content\models\Items;
 
 /**
  * ContentController implements the CRUD actions.
