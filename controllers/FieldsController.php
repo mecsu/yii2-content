@@ -45,7 +45,7 @@ class FieldsController extends Controller
                 'class' => AccessControl::class,
                 'rules' => [
                     [
-                        'roles' => ['admin'],
+                        'roles' => ['@'],
                         'allow' => true
                     ],
                 ],

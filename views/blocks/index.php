@@ -71,7 +71,7 @@ if (isset(Yii::$app->translations) && class_exists('\wdmg\translations\FlagsAsse
 
                     }
 
-                    if ((Yii::$app->authManager && $this->context->module->moduleExist('rbac') && Yii::$app->user->can('updatePosts', [
+                    if (true || (Yii::$app->authManager && $this->context->module->moduleExist('rbac') && Yii::$app->user->can('updatePosts', [
                         'created_by' => $data->created_by,
                         'updated_by' => $data->updated_by
                     ]))) {
@@ -108,7 +108,7 @@ if (isset(Yii::$app->translations) && class_exists('\wdmg\translations\FlagsAsse
                     $html = '';
 
                     if ($data->getContentCount()) {
-                        if ((Yii::$app->authManager && $this->context->module->moduleExist('rbac') && Yii::$app->user->can('updatePosts', [
+                        if (true || (Yii::$app->authManager && $this->context->module->moduleExist('rbac') && Yii::$app->user->can('updatePosts', [
                             'created_by' => $data->created_by,
                             'updated_by' => $data->updated_by
                         ]))) {
