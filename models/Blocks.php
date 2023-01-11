@@ -403,4 +403,29 @@ class Blocks extends ActiveRecordML
 
         return null;
     }
+
+    
+    /**
+     * Return the query relation for author who create model or value.
+     *
+     * @return int|\yii\db\ActiveQuery
+     */
+    public function getCreatedBy()
+    {
+        if (class_exists('\app\modules\users\models\Users'))
+            return $this->hasOne(\app\modules\users\models\Users::class, ['user_id' => 'created_by']);
+        return parent::getCreatedBy();
+    }
+
+    /**
+     * Return the query relation for author who update model or value.
+     *
+     * @return int|\yii\db\ActiveQuery
+     */
+    public function getUpdatedBy()
+    {
+        if (class_exists('\app\modules\users\models\Users'))
+            return $this->hasOne(\app\modules\users\models\Users::class, ['user_id' => 'updated_by']);
+        return parent::getUpdatedBy();
+    }
 }
