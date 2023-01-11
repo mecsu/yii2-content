@@ -14,7 +14,7 @@
   "repositories":[
     {
         "type": "git",
-        "url": "https://github.com/mecsu/yii2-blog"
+        "url": "https://github.com/mecsu/yii2-content"
     }
   ],
   "require": {
