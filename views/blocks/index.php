@@ -65,9 +65,9 @@ if (isset(Yii::$app->translations) && class_exists('\wdmg\translations\FlagsAsse
                             $onMore = true;
 
                         if ($onMore)
-                            $html = join(array_slice($list, 0, 5), " ") . "&nbsp;… ";
+                            $html = join(" ", array_slice($list, 0, 5)) . "&nbsp;… ";
                         else
-                            $html = join($list, " ");
+                            $html = join(" ", $list);
 
                     }
 
@@ -253,7 +253,7 @@ if (isset(Yii::$app->translations) && class_exists('\wdmg\translations\FlagsAsse
                                 $onMore = true;
 
                             if ($onMore)
-                                return join(array_slice($output, 0, 3), $separator) . "&nbsp;…";
+                                return join($separator, array_slice($output, 0, 3)) . "&nbsp;…";
                             else
                                 return join($separator, $output);
 
